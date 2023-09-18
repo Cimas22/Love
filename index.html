@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mijn webpagina</title>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js">
+</script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+</script>
+<link rel="stylesheet"
+href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+<script type="text/javascript">
+$(function() {
+$("#accordion").accordion();
+});
+
+$(document).ready(function() {
+$("#knop").click(function() {
+var city = $("#idTekstveld1").val();
+var person = $("#idTekstveld2").val();
+var food = $("#idTekstveld3").val();
+window.alert(
+"You will go next year to " + city +
+" with " + person +
+" and you will eat " + food
+);
+});
+});
+</script>
+
+<style>
+  body {background-color: lightpink}
+
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightblue;
+  color: Purple;
+  height:200px
+  }
+
+</style>
+
+<header>
+<!-- De header van uw website bevat een responsief menu, met een titel en drie links naar de drie verschillende paginas
+Home, Over Mij, COntact). De kleuren van het menu en de positionering vand e links mag u zelf bepalen -->
+
+
+<div>
+
+        <div> <center> <br>
+          <h1> <font color= "Purple"> Life with Love </font color> </h1>
+        </center> <br>
+        </div>
+</div>
+
+
+</header>
+
+</head>
+<body>
+
+
+<div>
+<form>
+Which is your favorite city?
+<input type="text" id="idTekstveld1"><br><br>
+Who is your favorite person?
+<input type="text" id="idTekstveld2"><br><br>
+Which is your favorite food?
+<input type="text" id="idTekstveld3"><br><br>
+<input id="knop" name="knop" type="button"
+value="Klik op deze knop">
+</form>
+</div>
+<br>
+<br>
+
+<div id="accordion">
+<h3> Why did you choose those options? </h3>
+<div>
+<p> You have good reasons!</p>
+</div>
+<h3> Your favorite city</h3>
+<div>
+<p> This is the place where you have felt beloved</p>
+</div>
+<h3> Your favorite person</h3>
+<div>
+<p> This is the person that gives you hope and love</p>
+</div>
+<h3> Your favorite food </h3>
+<div>
+<p> This is the food that feels like home</p>
+</div>
+</div>
+
+
+</body>
+<footer>
+  <div>
+     <h3> <center> <br> <br> ®Isabel Martinez 2023 </center></h3>
+  </div>
+</footer>
+</html>
